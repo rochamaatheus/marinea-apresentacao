@@ -33,7 +33,9 @@ h2.i2-label{line-height:1.5}
 .i2-chapter{padding:110px 0}
 .i2-chapter-grid{display:grid;grid-template-columns:1fr 1fr;gap:96px;align-items:center}
 .i2-chapter-grid.reverse .i2-chapter-media{order:2}
-.i2-portrait{aspect-ratio:4/5;border-radius:4px}
+.i2-portrait,.i2-photo{aspect-ratio:4/5;border-radius:4px}
+.i2-photo{width:100%;object-fit:cover;object-position:center 30%}
+.i2-actions{display:flex;flex-wrap:wrap;align-items:center;gap:18px 28px}
 .i2-chapter-n{font-family:var(--serif);font-size:var(--h3);color:var(--terra);line-height:1}
 .i2-chapter-copy h2{font-size:calc(var(--h2)*1.25);margin:16px 0 10px}
 .neutral .i2-chapter-copy h2{font-size:30px}

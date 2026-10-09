@@ -50,7 +50,8 @@
 
 .i3-about-section{background:var(--white)}
 .i3-about{display:grid;grid-template-columns:.8fr 1.2fr;gap:80px;align-items:center}
-.i3-about-photo{aspect-ratio:4/5}
+.i3-about-photo{width:100%;aspect-ratio:4/5;object-fit:cover;object-position:center 30%;border-radius:var(--radius)}
+.i3-actions{display:flex;flex-wrap:wrap;align-items:center;gap:16px 26px}
 .i3-about-copy h2{margin:14px 0 18px}
 .i3-about-copy>p{color:var(--muted);max-width:56ch}
 .i3-badge{padding:26px 0;border-top:1px solid var(--line);border-bottom:1px solid var(--line);margin:28px 0}
