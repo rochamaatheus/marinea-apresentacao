@@ -1,12 +1,12 @@
-# Psicóloga Marínea Fediuk: três ideias de layout
+# Psicóloga Marínea Fediuk: novo site
 
-Apresentação da Agência Kamino com três ideias de página inicial para o novo site da Psicóloga Marínea Maria Fediuk (CRP 12/01526).
+Apresentação da Agência Kamino do novo site da Psicóloga Marínea Maria Fediuk (CRP 12/01526), a partir do modelo 3 aprovado pela cliente.
 
-As páginas são wireframes em cinza de propósito: a conversa nesta etapa é sobre estrutura, ordem das informações e caminho até o contato. Cores, fontes, fotos e textos definitivos entram depois da escolha.
+- `index.html`: design final da página inicial (paleta, fontes e fotos da cliente).
+- `wireframe/index.html`: o mesmo modelo 3 em wireframe (estrutura em cinza).
+- `wireframe/mentoria-dona-de-si.html`: estrutura da página da mentoria.
+- `ideias/`: endereços antigos, que redirecionam para o wireframe.
 
-- `index.html`: apresentação e comparação das ideias.
-- `ideias/ideia-1-acolhimento.html`: Acolhimento sereno.
-- `ideias/ideia-2-editorial.html`: Editorial e autoral.
-- `ideias/ideia-3-caminhos.html`: Caminhos guiados.
+A barra no rodapé da tela alterna entre wireframe e design final e mantém a seção que está sendo vista.
 
 Site estático publicado pelo GitHub Pages. As páginas têm `noindex, nofollow` e não aparecem em buscadores. Os botões de WhatsApp e de compra são demonstrativos. Este repositório contém apenas a versão publicada; a fonte editável fica no projeto local da Kamino.
