@@ -40,22 +40,27 @@
       </div>
       <figure class="hero-figure">
         <svg class="blob blob-fill" viewBox="0 0 400 400" aria-hidden="true"><path d="M318 74c44 40 66 106 52 168-15 63-66 121-131 138-66 17-146-8-191-62C3 264-7 182 23 120 53 57 123 14 191 14c46 0 91 25 127 60z"/></svg>
-        <svg class="blob blob-line" viewBox="0 0 400 400" aria-hidden="true"><path d="M318 74c44 40 66 106 52 168-15 63-66 121-131 138-66 17-146-8-191-62C3 264-7 182 23 120 53 57 123 14 191 14c46 0 91 25 127 60z"/></svg>
+        <svg class="blob blob-line" viewBox="0 0 400 400" aria-hidden="true"><path pathLength="1" d="M318 74c44 40 66 106 52 168-15 63-66 121-131 138-66 17-146-8-191-62C3 264-7 182 23 120 53 57 123 14 191 14c46 0 91 25 127 60z"/></svg>
         <img class="hero-photo" src="assets/d-marinea-640.webp" srcset="assets/d-marinea-640.webp 640w, assets/d-marinea-1040.webp 1040w" sizes="(max-width: 900px) 92vw, 500px" alt="Retrato da psicóloga Marínea Maria Fediuk, sorrindo" width="1040" height="1300" fetchpriority="high">
       </figure>
     </div>
   </section>
 
-  <section class="section section-tint" id="caminhos" aria-labelledby="caminhos-titulo">
-    <div class="wrap">
-      <div class="head" data-reveal><h2 id="caminhos-titulo">Como posso ajudar</h2><p class="lead">Toque no que mais se parece com o seu momento.</p></div>
-      <div class="paths" data-tabs data-reveal>
-        <div class="path-tabs" role="tablist" aria-label="Caminhos de atendimento">
-          <button role="tab" id="tab-terapia" aria-controls="painel-terapia" aria-selected="true" type="button">Quero cuidar de mim</button>
-          <button role="tab" id="tab-mentoria" aria-controls="painel-mentoria" aria-selected="false" tabindex="-1" type="button">Quero viver além do trabalho</button>
-          <button role="tab" id="tab-empresa" aria-controls="painel-empresa" aria-selected="false" tabindex="-1" type="button">Quero cuidar da minha equipe</button>
-          <button role="tab" id="tab-livros" aria-controls="painel-livros" aria-selected="false" tabindex="-1" type="button">Procuro livros e cursos</button>
+  <section class="section section-tint paths-section" id="caminhos" aria-labelledby="caminhos-titulo">
+    <svg class="trace paths-trace" viewBox="0 0 500 200" aria-hidden="true" data-trace><path pathLength="1" d="M4 150C70 40 150 30 210 92s120 96 190 30 66-90 96-104"/></svg>
+    <div class="wrap paths" data-tabs>
+      <div class="paths-aside" data-reveal>
+        <h2 id="caminhos-titulo">Como posso ajudar</h2>
+        <p class="lead">Toque no que mais se parece com o seu momento.</p>
+        <div class="path-tabs" role="tablist" aria-label="Caminhos de atendimento" aria-orientation="vertical">
+          <span class="path-ind" aria-hidden="true"></span>
+          <button role="tab" id="tab-terapia" aria-controls="painel-terapia" aria-selected="true" type="button"><span class="pt-q">Quero cuidar de mim</span><span class="pt-s">Psicoterapia</span><svg class="pt-arrow" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h13M13 6l6 6-6 6"/></svg></button>
+          <button role="tab" id="tab-mentoria" aria-controls="painel-mentoria" aria-selected="false" tabindex="-1" type="button"><span class="pt-q">Quero viver além do trabalho</span><span class="pt-s">Mentoria Dona de Si</span><svg class="pt-arrow" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h13M13 6l6 6-6 6"/></svg></button>
+          <button role="tab" id="tab-empresa" aria-controls="painel-empresa" aria-selected="false" tabindex="-1" type="button"><span class="pt-q">Quero cuidar da minha equipe</span><span class="pt-s">Palestras e NR-1</span><svg class="pt-arrow" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h13M13 6l6 6-6 6"/></svg></button>
+          <button role="tab" id="tab-livros" aria-controls="painel-livros" aria-selected="false" tabindex="-1" type="button"><span class="pt-q">Procuro livros e cursos</span><span class="pt-s">Livros e materiais</span><svg class="pt-arrow" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h13M13 6l6 6-6 6"/></svg></button>
         </div>
+      </div>
+      <div class="paths-panels" data-reveal>
         <div class="panel" role="tabpanel" id="painel-terapia" aria-labelledby="tab-terapia" tabindex="0">
           <div class="panel-copy" id="psicoterapia"><p class="kicker">Psicoterapia</p><h3>Para quando o passado ainda pesa no presente.</h3><p>Atendimento para adultos e adolescentes que convivem com traumas, ansiedade, fobias, depressão ou bloqueios. Com EMDR e Brainspotting, no tempo de cada pessoa.</p><a class="btn" href="#contato" data-demo="No site final, este botão abre uma conversa no WhatsApp da Marínea."><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round" aria-hidden="true"><path d="M4 20l1.4-3.8A8 8 0 1 1 8.2 19z"/><path d="M9 10.5h6M9 13.5h4"/></svg> Agendar a primeira sessão</a></div>
           <ul class="facts"><li><strong>Adultos e adolescentes</strong>sessões individuais</li><li><strong>Presencial ou online</strong>em Joinville ou por videochamada</li><li><strong>31 anos de clínica</strong>mais de 41 mil horas de escuta</li></ul>
@@ -84,12 +89,15 @@
         <blockquote class="quote"><p>“Uma vez meu paciente, sempre meu paciente.”</p><footer>Quem já passou pelo consultório tem prioridade para voltar, mesmo anos depois.</footer></blockquote>
         <a class="link" href="#" data-demo="Esta página interna será desenhada depois da escolha do layout.">Ler a história completa</a>
       </div>
+      <div class="numbers-wrap">
+        <svg class="trace about-trace" viewBox="0 0 400 400" aria-hidden="true" data-trace><path pathLength="1" d="M318 74c44 40 66 106 52 168-15 63-66 121-131 138-66 17-146-8-191-62C3 264-7 182 23 120 53 57 123 14 191 14c46 0 91 25 127 60z"/></svg>
       <ul class="numbers" data-reveal>
         <li style="--d:0"><strong>31 anos</strong>de prática clínica</li>
         <li style="--d:1"><strong>+41 mil</strong>horas de atendimento</li>
         <li style="--d:2"><strong>EMDR e Brainspotting</strong>no cuidado com o trauma</li>
         <li style="--d:3"><strong>Mestre pela UFSC</strong>em Psicologia</li>
       </ul>
+      </div>
     </div>
   </section>
 
@@ -97,20 +105,23 @@
     <div class="wrap">
       <div class="head" data-reveal><h2 id="passos-titulo">Como começa</h2></div>
       <ol class="steps" data-reveal>
-        <li style="--d:0"><span class="node" aria-hidden="true">1</span><h3>Uma mensagem</h3><p>Você chama no WhatsApp e conta, do seu jeito, o que procura.</p></li>
-        <li style="--d:1"><span class="node" aria-hidden="true">2</span><h3>Um primeiro encontro</h3><p>Na psicoterapia, a primeira sessão. Na mentoria, uma conversa para entender o seu momento.</p></li>
+        <li style="--d:0"><svg class="step-link step-h" viewBox="0 0 300 44" preserveAspectRatio="none" aria-hidden="true"><path pathLength="1" d="M0 22C40 6 70 38 110 22s80-16 120 0 50 12 70 0"/></svg><svg class="step-link step-v" viewBox="0 0 44 300" preserveAspectRatio="none" aria-hidden="true"><path pathLength="1" d="M22 0C6 40 38 70 22 110s-16 80 0 120 12 50 0 70"/></svg><span class="node" aria-hidden="true">1</span><h3>Uma mensagem</h3><p>Você chama no WhatsApp e conta, do seu jeito, o que procura.</p></li>
+        <li style="--d:1"><svg class="step-link step-h" viewBox="0 0 300 44" preserveAspectRatio="none" aria-hidden="true"><path pathLength="1" d="M0 22C40 6 70 38 110 22s80-16 120 0 50 12 70 0"/></svg><svg class="step-link step-v" viewBox="0 0 44 300" preserveAspectRatio="none" aria-hidden="true"><path pathLength="1" d="M22 0C6 40 38 70 22 110s-16 80 0 120 12 50 0 70"/></svg><span class="node" aria-hidden="true">2</span><h3>Um primeiro encontro</h3><p>Na psicoterapia, a primeira sessão. Na mentoria, uma conversa para entender o seu momento.</p></li>
         <li style="--d:2"><span class="node" aria-hidden="true">3</span><h3>Um caminho construído junto</h3><p>O acompanhamento segue no seu ritmo, com escuta e cuidado.</p></li>
       </ol>
     </div>
   </section>
 
   <section class="breath-section" id="respirar" aria-labelledby="respirar-titulo">
-    <div class="wrap breath-grid">
-      <div class="breath-copy" data-reveal>
+    <div class="breath-traces" aria-hidden="true" data-trace>
+      <svg class="r1" viewBox="0 0 400 400"><path pathLength="1" d="M318 74c44 40 66 106 52 168-15 63-66 121-131 138-66 17-146-8-191-62C3 264-7 182 23 120 53 57 123 14 191 14c46 0 91 25 127 60z"/></svg>
+      <svg class="r2" viewBox="0 0 400 400"><path pathLength="1" d="M318 74c44 40 66 106 52 168-15 63-66 121-131 138-66 17-146-8-191-62C3 264-7 182 23 120 53 57 123 14 191 14c46 0 91 25 127 60z"/></svg>
+      <svg class="r3" viewBox="0 0 400 400"><path pathLength="1" d="M318 74c44 40 66 106 52 168-15 63-66 121-131 138-66 17-146-8-191-62C3 264-7 182 23 120 53 57 123 14 191 14c46 0 91 25 127 60z"/></svg>
+    </div>
+    <div class="wrap breath-layout">
+      <div class="head breath-head" data-reveal>
         <h2 id="respirar-titulo">Coerência cardíaca: um minuto para respirar</h2>
         <p class="lead">Quando respiração, coração e mente entram em ritmo, o corpo encontra mais equilíbrio. Experimente: inspire por cinco segundos e solte o ar por cinco.</p>
-        <p class="note">Para levar a prática para o dia a dia, a Marínea reuniu vídeo, áudio e e-book no Kit de Primeiros Socorros.</p>
-        <a class="link link-light" href="#materiais" data-open-tab="tab-lib-cursos">Conhecer o kit na biblioteca</a>
       </div>
       <div class="breath" data-coherence>
         <div class="breath-stage" aria-hidden="true">
@@ -119,7 +130,17 @@
           <div class="breath-core"><span data-count></span></div>
         </div>
         <p class="breath-label" data-label aria-live="polite">Pronta para começar?</p>
+        <ol class="breath-dots" aria-hidden="true"><li></li><li></li><li></li><li></li><li></li><li></li></ol>
         <button class="btn btn-light" type="button" data-toggle>Respirar por 1 minuto</button>
+      </div>
+      <ul class="breath-facts" data-reveal>
+        <li style="--d:0"><strong>5 s</strong>inspirando</li>
+        <li style="--d:1"><strong>5 s</strong>soltando o ar</li>
+        <li style="--d:2"><strong>6</strong>respirações em um minuto</li>
+      </ul>
+      <div class="breath-kit" data-reveal>
+        <p class="note">Para levar a prática para o dia a dia, a Marínea reuniu vídeo, áudio e e-book no Kit de Primeiros Socorros.</p>
+        <a class="link link-light" href="#materiais" data-open-tab="tab-lib-cursos">Conhecer o kit na biblioteca</a>
       </div>
     </div>
   </section>
@@ -133,11 +154,11 @@
           <button role="tab" id="tab-bsp" aria-controls="painel-bsp" aria-selected="false" tabindex="-1" type="button">Brainspotting</button>
         </div>
         <div class="method-panel" role="tabpanel" id="painel-emdr" aria-labelledby="tab-emdr">
-          <button class="video" type="button" data-video="y5rBCnI321k" aria-label="Assistir: O que é EMDR?"><img src="assets/d-video-emdr.webp" alt="" width="433" height="244" loading="lazy"><span class="play"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 4l14 8-14 8z"/></svg></span></button>
+          <button class="video video-own" type="button" data-src="assets/video-emdr.mp4" style="--ar:16/9" aria-label="Assistir: O que é EMDR? Vídeo de 10 minutos"><img src="assets/d-video-emdr-poster.webp" alt="" width="960" height="540" loading="lazy"><span class="play"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 4l14 8-14 8z"/></svg></span><span class="video-time">10:49</span></button>
           <div><h3>EMDR</h3><p>Ajuda o cérebro a reprocessar memórias difíceis, para que deixem de ter o mesmo peso no presente.</p><p class="note">Método reconhecido pelo Conselho Federal de Psicologia e recomendado pela OMS.</p></div>
         </div>
         <div class="method-panel" role="tabpanel" id="painel-bsp" aria-labelledby="tab-bsp" hidden>
-          <button class="video" type="button" data-video="lNDUKpm4mGg" aria-label="Assistir: O que é Brainspotting?"><img src="assets/d-video-brainspotting.webp" alt="" width="480" height="270" loading="lazy"><span class="play"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 4l14 8-14 8z"/></svg></span></button>
+          <button class="video video-own" type="button" data-src="assets/video-brainspotting.mp4" style="--ar:1/1" aria-label="Assistir: O que é Brainspotting? Vídeo de 8 minutos"><img src="assets/d-video-brainspotting-poster.webp" alt="" width="540" height="540" loading="lazy"><span class="play"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 4l14 8-14 8z"/></svg></span><span class="video-time">8:24</span></button>
           <div><h3>Brainspotting</h3><p>Parte da ideia de que onde olhamos afeta o que sentimos. Pontos do campo visual ajudam a acessar e acolher emoções.</p></div>
         </div>
       </div>
@@ -240,8 +261,13 @@
     <div class="wrap">
       <div class="contact-card" data-reveal>
         <svg class="blob contact-blob" viewBox="0 0 400 400" aria-hidden="true"><path d="M318 74c44 40 66 106 52 168-15 63-66 121-131 138-66 17-146-8-191-62C3 264-7 182 23 120 53 57 123 14 191 14c46 0 91 25 127 60z"/></svg>
-        <div><h2 id="contato-titulo">Quando quiser, é só chamar.</h2><p>O primeiro contato é pelo WhatsApp, de forma simples e reservada.</p></div>
-        <a class="btn" href="#" data-demo="No site final, este botão abre uma conversa no WhatsApp da Marínea."><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round" aria-hidden="true"><path d="M4 20l1.4-3.8A8 8 0 1 1 8.2 19z"/><path d="M9 10.5h6M9 13.5h4"/></svg> (47) 98483-1510</a>
+        <svg class="trace contact-trace" viewBox="0 0 500 200" aria-hidden="true"><path pathLength="1" d="M4 150C70 40 150 30 210 92s120 96 190 30 66-90 96-104"/></svg>
+        <div class="contact-copy"><h2 id="contato-titulo">Quando quiser, é só chamar.</h2><p>O primeiro contato é pelo WhatsApp, de forma simples e reservada.</p><a class="btn btn-chat" href="#" data-demo="No site final, este botão abre uma conversa no WhatsApp da Marínea."><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round" aria-hidden="true"><path d="M4 20l1.4-3.8A8 8 0 1 1 8.2 19z"/><path d="M9 10.5h6M9 13.5h4"/></svg> (47) 98483-1510</a></div>
+        <div class="chat-preview" aria-hidden="true">
+          <p class="chat-to">Para: Marínea Maria Fediuk</p>
+          <p class="bubble" data-type>Olá, Marínea! Vim pelo site e gostaria de conversar sobre um atendimento.</p>
+          <p class="chat-hint">A mensagem já vem escrita. É só enviar.</p>
+        </div>
       </div>
     </div>
   </section>
@@ -257,7 +283,7 @@
     <div class="footer-legal"><span>© 2026 Fediuk &amp; França Psicólogos · CNPJ 00.000.000/0000-00</span><span>Responsável técnica: Psicóloga Mestre Marínea Maria Fediuk, CRP 12/01526</span><span class="footer-links"><a href="#" data-demo="No site final, este link abre o endereço correspondente.">Política de privacidade</a><a href="#" data-demo="No site final, este link abre o endereço correspondente.">Termos de uso</a></span></div>
   </div>
 </footer>
-<button class="whats-float" type="button" aria-label="Conversar pelo WhatsApp" data-demo="No site final, este botão abre uma conversa no WhatsApp da Marínea."><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round" aria-hidden="true"><path d="M4 20l1.4-3.8A8 8 0 1 1 8.2 19z"/><path d="M9 10.5h6M9 13.5h4"/></svg></button>
+<button class="whats-float" type="button" aria-label="Conversar pelo WhatsApp" data-demo="No site final, este botão abre uma conversa no WhatsApp da Marínea."><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round" aria-hidden="true"><path d="M4 20l1.4-3.8A8 8 0 1 1 8.2 19z"/><path d="M9 10.5h6M9 13.5h4"/></svg><span class="wf-label">Conversar</span></button>
 
 <dialog class="lightbox" aria-label="Fotos do espaço">
   <figure><img alt="" width="900" height="1200"><figcaption></figcaption></figure>
@@ -265,6 +291,6 @@
   <button class="lb-btn lb-next" type="button" aria-label="Próxima foto"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 5l7 7-7 7"/></svg></button>
   <button class="lb-btn lb-close" type="button" aria-label="Fechar"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 6l12 12M18 6L6 18"/></svg></button>
 </dialog>
-<style>@view-transition{navigation:auto}.switch{position:fixed;left:50%;bottom:16px;transform:translateX(-50%);z-index:400;display:flex;gap:4px;padding:5px;border-radius:999px;background:#1c1c1eeb;border:1px solid #ffffff26;box-shadow:0 10px 30px #00000038;font:700 13px/1 Arial,Helvetica,sans-serif;white-space:nowrap}.switch a{padding:11px 16px;border-radius:999px;color:#e8e8e8;text-decoration:none;transition:background-color .3s,color .3s}.switch a:hover{background:#ffffff1f}.switch a[aria-current]{background:#f4f4f2;color:#1c1c1e}.switch a:focus-visible{outline:2px solid #fff;outline-offset:2px}@media (max-width:620px){.switch{bottom:12px}.switch a{padding:10px 13px}}@media print{.switch{display:none}}</style><nav class="switch" aria-label="Versão da página"><a href="wireframe/" data-keep>Wireframe</a><a href="./" aria-current="page">Design final</a></nav><script>document.querySelectorAll(".switch [data-keep]").forEach(a=>a.addEventListener("click",()=>{const s=[...document.querySelectorAll("main section[id]")].filter(e=>e.getBoundingClientRect().top<innerHeight*.4).pop();a.href=a.getAttribute("href").split("#")[0]+(s?"#"+s.id:"")}))</script>
+<style>@view-transition{navigation:auto}.switch{position:fixed;left:50%;bottom:16px;transform:translateX(-50%);z-index:400;display:flex;gap:4px;padding:5px;border-radius:999px;background:#1c1c1eeb;border:1px solid #ffffff26;box-shadow:0 10px 30px #00000038;font:700 13px/1 Arial,Helvetica,sans-serif;white-space:nowrap}.switch a{padding:11px 16px;border-radius:999px;color:#e8e8e8;text-decoration:none;transition:background-color .3s,color .3s}.switch a:hover{background:#ffffff1f}.switch a[aria-current]{background:#f4f4f2;color:#1c1c1e}.switch a:focus-visible{outline:2px solid #fff;outline-offset:2px}@media (max-width:620px){.switch{bottom:12px}.switch a{padding:13px 14px}}@media print{.switch{display:none}}</style><nav class="switch" aria-label="Versão da página"><a href="wireframe/" data-keep>Wireframe</a><a href="./" aria-current="page">Design final</a></nav><script>document.querySelectorAll(".switch [data-keep]").forEach(a=>a.addEventListener("click",()=>{const s=[...document.querySelectorAll("main section[id]")].filter(e=>e.getBoundingClientRect().top<innerHeight*.4).pop();a.href=a.getAttribute("href").split("#")[0]+(s?"#"+s.id:"")}))</script>
 </body>
 </html>
