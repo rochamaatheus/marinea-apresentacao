@@ -330,13 +330,5 @@ h1,h2,h3,.creds strong,.numbers strong,.node,.breath-core,.quote p,.kicker{font-
   .demo-toast{bottom:78px}
   .lb-prev,.lb-next{top:auto;bottom:20px;margin:0}
 }
-@media (prefers-reduced-motion:reduce){
-  html{scroll-behavior:auto}
-  *,*::before,*::after{animation-duration:.01ms!important;animation-iteration-count:1!important;transition-duration:.01ms!important;transition-delay:0s!important}
-  .js [data-reveal],.js .numbers li,.js .steps li,.js .gallery li{opacity:1;transform:none}
-  .js .steps:not(.in)::before{transform:none}
-  .breath.running .breath-core{animation:soft 10s linear infinite!important;animation-duration:10s!important;animation-iteration-count:infinite!important}
-  .breath.running .ring-progress{transition:stroke-dashoffset 60s linear!important}
-  @keyframes soft{0%,100%{opacity:.55}50%{opacity:1}}
-}
+/* o motion roda mesmo com "movimento reduzido" do sistema (decisão de 21/10/2026: no Windows com animações desligadas a página ficava parada) */
 @media print{.switch,.demo-toast,.whats-float,.site-header{display:none}}
