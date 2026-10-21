@@ -24,18 +24,31 @@
 .m3-numbers strong{font-size:var(--h3);line-height:1.15;color:var(--ink);font-family:var(--serif)}
 
 .m3-place-section{background:var(--paper)}
-.m3-place{display:grid;grid-template-columns:.9fr 1.1fr;gap:80px;align-items:center}
+.m3-place-copy{max-width:720px}
 .m3-place-copy h2{margin-bottom:16px}
 .m3-place-list{margin:32px 0 0;padding:0}
 .m3-place-list div{display:grid;grid-template-columns:110px 1fr;gap:20px;padding:18px 0;border-top:1px solid var(--line)}
 .m3-place-list div:last-child{border-bottom:1px solid var(--line)}
 .m3-place-list dt{font-size:var(--small);font-weight:700;color:var(--muted);padding-top:3px}
 .m3-place-list dd{margin:0;font-size:16px}
-.m3-place-photo{margin:0;width:100%;min-width:0;aspect-ratio:4/3}
+.m3-gallery{display:grid;grid-template-columns:repeat(4,1fr);grid-auto-rows:clamp(160px,17vw,250px);gap:16px;margin-top:56px}
+.m3-gallery li{min-width:0;min-height:0;overflow:hidden;border-radius:var(--radius)}
+.m3-gallery img{width:100%;height:100%;object-fit:cover;display:block}
+.m3-g-big{grid-column:span 2;grid-row:span 2}
+.m3-g-wide{grid-column:span 2}
+.m3-faq-long{padding:0 0 24px;color:var(--muted);max-width:62ch}
+details div.m3-faq-long p{padding:0;margin:0 0 14px;max-width:none}
+.m3-faq-long h4{margin:26px 0 10px;font-size:16px;color:var(--ink)}
+.m3-faq-long strong{color:var(--ink)}
+.i3-cards-tall{grid-template-columns:repeat(2,minmax(0,360px));justify-content:center;gap:40px}
+.i3-cards-tall .i3-card>img,.i3-cards-tall .i3-card-cover{aspect-ratio:4/5;object-position:center}
 
 @media (max-width:900px){
   .m3-hero{padding:40px 0 64px}
-  .m3-hero-grid,.m3-about,.m3-place{grid-template-columns:1fr;gap:40px}
+  .m3-hero-grid,.m3-about{grid-template-columns:1fr;gap:40px}
+  .m3-gallery{grid-template-columns:repeat(2,1fr);grid-auto-rows:clamp(150px,34vw,260px);gap:12px;margin-top:40px}
+  .m3-g-wide{grid-column:span 1}
+  .i3-cards-tall{grid-template-columns:minmax(0,420px);gap:32px}
   .m3-hero-photo{order:-1;max-width:none;justify-self:stretch;aspect-ratio:4/3.6;object-position:center 22%}
   .m3-hero-copy h1{max-width:none}
   .m3-paths-section{padding:64px 0 72px}

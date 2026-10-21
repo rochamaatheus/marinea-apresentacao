@@ -67,3 +67,8 @@
   .m-hero .button,.m-cta .button{width:100%}
   .m-who li{font-size:16px}
 }
+
+.m3-faq-long{padding:0 0 24px;color:var(--muted);max-width:62ch}
+details div.m3-faq-long p{padding:0;margin:0 0 14px;max-width:none}
+.m3-faq-long h4{margin:26px 0 10px;font-size:16px;color:var(--ink)}
+.m3-faq-long strong{color:var(--ink)}
