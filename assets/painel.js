@@ -44,7 +44,7 @@
 
   const views = {
     login(err) {
-      app.innerHTML = `<div class="login"><form class="login-card" id="login" novalidate><p class="sign">Marínea Fediuk</p><h1>Entrar no painel</h1><p>Aqui você e sua filha adicionam produtos, materiais e artigos do site.</p>${err ? `<p class="error" role="alert">${err}</p>` : ''}<div class="field"><label for="email">E-mail</label><input id="email" type="email" autocomplete="username" inputmode="email"></div><div class="field"><label for="senha">Senha</label><div class="pass"><input id="senha" type="password" autocomplete="current-password"><button type="button" data-ver aria-pressed="false">Mostrar</button></div></div><button class="btn" style="width:100%" type="submit">Entrar</button></form></div>`;
+      app.innerHTML = `<div class="login"><form class="login-card" id="login" novalidate><p class="sign">Marínea Fediuk</p><h1>Entrar no painel</h1>${err ? `<p class="error" role="alert">${err}</p>` : ''}<div class="field"><label for="email">E-mail</label><input id="email" type="email" autocomplete="username" inputmode="email" value="marinea@exemplo.com"></div><div class="field"><label for="senha">Senha</label><div class="pass"><input id="senha" type="password" autocomplete="current-password" value="demonstracao"><button type="button" data-ver aria-pressed="false">Mostrar</button></div></div><button class="btn" style="width:100%" type="submit">Entrar</button></form></div>`;
       app.querySelector('#email').focus();
     },
     inicio() {
@@ -103,9 +103,7 @@
   app.addEventListener('submit', e => {
     if (e.target.id !== 'login') return;
     e.preventDefault();
-    const email = e.target.querySelector('#email').value.trim(), senha = e.target.querySelector('#senha').value;
-    if (!email || !senha) return views.login('Preencha o e-mail e a senha.');
-    logged = true;
+    logged = true; // protótipo: qualquer entrada, até vazia, abre o painel
     go('inicio');
     route();
   });
