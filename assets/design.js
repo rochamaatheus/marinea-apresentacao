@@ -77,7 +77,7 @@ if (coherence) {
     timer = null;
     coherence.classList.remove('running');
     section.classList.remove('focus');
-    set(label, message || 'Pronta para começar?');
+    set(label, message || 'Pronto(a) para começar?');
     set(count, '');
     if (!message) dots.forEach(dot => dot.classList.remove('on'));
     button.textContent = message ? 'Respirar mais um minuto' : 'Respirar por 1 minuto';

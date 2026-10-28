@@ -78,7 +78,7 @@ if (breath) {
     clearInterval(timer);
     running = false;
     breath.classList.remove('running', 'out');
-    label.textContent = 'Pronta para começar?';
+    label.textContent = 'Pronto(a) para começar?';
     count.textContent = '';
     button.textContent = 'Respirar por 1 minuto';
   };
